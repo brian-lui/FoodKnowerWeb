@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FoodKnower — Know What You're Really Eating</title>
   <meta name="description" content="FoodKnower identifies food from photos and scores it for processing level and overeating risk. Take back control of what you eat.">
+  <meta name="theme-color" content="#388E3C">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="canonical" href="https://foodknower.com/">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
   <!-- Header -->
   <header class="site-header">
@@ -32,6 +40,8 @@
       </button>
     </div>
   </header>
+
+  <main id="main-content">
 
   <!-- Hero -->
   <section class="hero">
@@ -102,13 +112,13 @@
             <div class="detail-content">
               <p>Based on the NOVA food classification system (Monteiro et al.), extended with:</p>
               <ul>
-                <li><strong>Additive burden</strong> — classifies E-number additives (emulsifiers, sweeteners, flavour enhancers, colours, preservatives) and scores by count and type</li>
-                <li><strong>Industrial markers</strong> — detects maltodextrin, modified starch, glucose/corn syrups, hydrogenated fats, protein isolates</li>
-                <li><strong>Functional role stacking</strong> — counts how many food-engineering systems are present (sweetener, fat, flavour, mouthfeel, preservation, colour, umami, acid)</li>
-                <li><strong>Category priors</strong> — small adjustments by product category</li>
-                <li><strong>Guardrails</strong> — traditional foods (plain bread, single-ingredient items) are protected from over-scoring</li>
+                <li><strong>Additive burden</strong> ? counts and classifies emulsifiers, sweeteners, flavour enhancers, colours, and preservatives</li>
+                <li><strong>Industrial markers</strong> ? detects maltodextrin, modified starch, syrups, hydrogenated fats, protein isolates</li>
+                <li><strong>Functional stacking + category priors</strong> ? how many engineered roles are present, adjusted by product type</li>
+                <li><strong>Guardrails</strong> ? traditional and single-ingredient foods are protected from over-scoring</li>
               </ul>
-            </div>
+              <p><a href="methodology.html">Read full methodology</a></p>
+</div>
           </details>
         </div>
 
@@ -130,15 +140,16 @@
             <summary>How is this calculated?</summary>
             <div class="detail-content">
               <p>A weighted combination of two sub-scores:</p>
-              <p><strong>Nutrient analysis (Fazzino criteria, 40% weight):</strong> Checks nutrition data against three hyperpalatable clusters from Fazzino et al. (2019): Fat + Sodium, Fat + Sugar, and Carbs + Sodium. Beverages receive a bonus penalty because liquid calories bypass satiety signals.</p>
-              <p><strong>Ingredient formulation analysis (60% weight):</strong> Analyzes the ingredient list for palatability signals:</p>
+              <p><strong>Nutrient analysis (40%)</strong> ? checks Fazzino et al. (2019) hyperpalatable clusters: Fat + Sodium, Fat + Sugar, Carbs + Sodium.</p>
+              <p><strong>Ingredient formulation (60%)</strong> ? scans the ingredient list for palatability signals:</p>
               <ul>
                 <li>Position of sugar, oil, salt in ingredient list</li>
                 <li>Synergistic reward combos (sugar x fat, fat x salt, sweet x salty)</li>
-                <li>Snack architecture patterns (chip/cracker structures, chocolate, flavoured-salty)</li>
-                <li>Simplicity bonuses for short, clean ingredient lists</li>
+                <li>Snack-architecture patterns (chips/crackers, chocolate, flavoured-salty)</li>
+                <li>Beverage penalty and simplicity bonus for short, clean lists</li>
               </ul>
-            </div>
+              <p><a href="methodology.html">Read full methodology</a></p>
+</div>
           </details>
         </div>
       </div>
@@ -209,10 +220,13 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-links-row">
+        <a href="methodology.html">Methodology</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
         <a href="legal.html">Legal</a>        <a href="mailto:contact@foodknower.com">contact@foodknower.com</a>

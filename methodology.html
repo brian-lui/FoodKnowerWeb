@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology — FoodKnower</title>
+  <meta name="description" content="How FoodKnower calculates Food Integrity and Overeating Risk.">
+  <meta name="theme-color" content="#388E3C">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="canonical" href="https://foodknower.com/methodology.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="FoodKnower logo">
+        FoodKnower
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#download">Download</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Methodology Content -->
+  <main id="main-content" class="policy-page">
+    <div class="container">
+      <h1>Methodology</h1>
+      <p class="last-updated">Last updated: February 25, 2026</p>
+
+      <p>FoodKnower provides two scores to help you understand both how industrially processed a food is and how likely it is engineered to encourage overeating. The scores are designed to be interpretable, consistent, and conservative where uncertainty exists.</p>
+
+      <h2>Food Integrity Score</h2>
+      <p>The Food Integrity score estimates how industrially processed a food is. It is anchored to the NOVA classification framework (Monteiro et al.) and extended with ingredient-level signals that often indicate heavy processing.</p>
+
+      <h3>Key inputs</h3>
+      <ul>
+        <li><strong>Additive burden</strong> — counts and classifies emulsifiers, sweeteners, flavour enhancers, colours, and preservatives. Higher counts and higher-impact additive types reduce integrity.</li>
+        <li><strong>Industrial markers</strong> — flags ingredients commonly used in industrial processing (for example: maltodextrin, modified starch, glucose/corn syrups, hydrogenated fats, protein isolates).</li>
+        <li><strong>Functional role stacking</strong> — estimates how many engineered functions are present, such as sweetener systems, texture engineering, preservation, colour, and umami enhancement.</li>
+        <li><strong>Category priors</strong> — applies small adjustments based on product category to avoid over-penalizing categories where certain ingredients are structurally required.</li>
+        <li><strong>Guardrails</strong> — protects traditional and single-ingredient foods (for example: plain bread, plain yogurt, basic grains) from being over-scored as ultra-processed.</li>
+      </ul>
+
+      <h2>Overeating Risk Score</h2>
+      <p>The Overeating Risk score estimates how likely a food is engineered to override natural satiety signals. It combines nutrient thresholds with ingredient formulation signals associated with hyperpalatability.</p>
+
+      <h3>Weighted sub-scores</h3>
+      <ul>
+        <li><strong>Nutrient analysis (40%)</strong> — evaluates nutrition data against the three hyperpalatable clusters from Fazzino et al. (2019): Fat + Sodium, Fat + Sugar, and Carbs + Sodium.</li>
+        <li><strong>Ingredient formulation analysis (60%)</strong> — scans the ingredient list for palatability signals, including: sugar/fat/salt positioning, synergistic reward combos (sugar x fat, fat x salt, sweet x salty), and snack-architecture patterns (chips/crackers, chocolate, flavoured-salty).</li>
+      </ul>
+
+      <h3>Adjustments</h3>
+      <ul>
+        <li><strong>Beverage penalty</strong> — liquid calories tend to bypass satiety signals, so beverages receive a small penalty.</li>
+        <li><strong>Simplicity bonus</strong> — short, clean ingredient lists receive a small downward adjustment in risk.</li>
+      </ul>
+
+      <h2>Important notes</h2>
+      <ul>
+        <li>Scores are estimates designed for consistency and user understanding, not medical advice.</li>
+        <li>When data is incomplete (for example, missing nutrition), the score is conservative and may rely more heavily on ingredient signals.</li>
+        <li>Methodology evolves as new research and validation data become available.</li>
+      </ul>
+
+      <p>If you have questions about how a specific food was scored, contact us at <a href="mailto:contact@foodknower.com">contact@foodknower.com</a>.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links-row">
+        <a href="methodology.html">Methodology</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="legal.html">Legal</a>        <a href="mailto:contact@foodknower.com">contact@foodknower.com</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodKnower. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
