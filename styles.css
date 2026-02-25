@@ -2,6 +2,7 @@
 :root {
   --primary: #388E3C;
   --primary-light: #C8E6C9;
+  --bg-green-light: #EDF7EE;
   --secondary: #FF9800;
   --bg: #F9FAF5;
   --surface: #FFFFFF;
@@ -236,6 +237,11 @@ section {
   margin: 0 auto 48px;
 }
 
+#how-it-works,
+#features {
+  background: var(--bg-green-light);
+}
+
 /* ===== How It Works — Score Cards ===== */
 .scores-grid {
   display: grid;
@@ -402,14 +408,14 @@ section {
   .features-grid { grid-template-columns: 1fr; }
 }
 
-/* ===== Screenshots Carousel ===== */
-.carousel-section {
-  background: var(--surface);
+/* ===== Hero Carousel ===== */
+.hero-carousel {
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .carousel-wrapper {
   position: relative;
-  max-width: 720px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -424,10 +430,6 @@ section {
   display: flex;
   justify-content: center;
   padding: 0 20px;
-}
-
-.carousel-slide .phone-mockup {
-  max-width: 240px;
 }
 
 .carousel-btn {
@@ -493,9 +495,36 @@ section {
   margin-bottom: 32px;
 }
 
+.store-badges {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .store-badges {
+    gap: 20px;
+  }
+}
+
 .store-badge {
   position: relative;
   display: inline-block;
+}
+
+.store-badge-link {
+  display: block;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.store-badge-link:hover {
+  transform: translateY(-2px);
+}
+
+.store-badge-img {
+  height: 56px;
+  width: auto;
 }
 
 .coming-soon-badge {
@@ -509,39 +538,6 @@ section {
   padding: 3px 8px;
   border-radius: 20px;
   text-transform: uppercase;
-}
-
-.play-store-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: #000;
-  color: #fff;
-  padding: 14px 32px;
-  border-radius: 12px;
-  font-size: 1rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.play-store-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-  text-decoration: none;
-  color: #fff;
-}
-
-.play-store-btn .btn-text-small {
-  font-size: 0.7rem;
-  opacity: 0.8;
-  display: block;
-  text-align: left;
-}
-
-.play-store-btn .btn-text-large {
-  font-size: 1.1rem;
-  font-weight: 600;
-  display: block;
-  text-align: left;
 }
 
 /* ===== Footer ===== */

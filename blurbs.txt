@@ -1,31 +1,4 @@
-Title: Same, put a period at the end.
-Subtitle: Take a picture of any food — restaurant meals, packaged foods, drinks, raw ingredients, you name it. Get instant scores for 
-
-Point your phone at any food. Get instant scores for its amount of processing and ease of portion control.
-
-App screenshot: This is a TODO. Consider whether a carousel would work.
-
-Two Scores. One Picture. heading: Change this to "Two scores."
-Subtitle: FoodKnower rates your food on the two things that matter most for healthy eating.
-
-Food Integrity (above chevron): How much your food has been industrially processed. [Eating natural food matters for health.]
-Food Integrity (below chevron): TBD
-
-Overeating Risk (above chevron): How much the food has been deliberately engineered to override your [natural signals of fullness], [making it easy to overeat].
-Overeating Risk (below chevron): TBD
+Blurb change suggestions:
+TODO: change below-chevron parts
 
 
-Features heading: Ok.
-Subtitle: Everything you need to make informed food choices.
-The cards -
-1. Header: Database of more than [X] packaged foods. Text: Packaged foods are matched against the Open Food Facts database and scores calculated with our proprietary formula.
-2. Header: Food Identification. Text: Any photo can be identified, whether it's a restaurant meal, a half-eaten snack, or a [packaging material], through AI.
-3. Header: Privacy. Text: We value your privacy and do not store any of your photos on our servers.
-
-[I think the other 3 cards are not strong enough to be features.]
-
-See It In Action: I'm considering deleting this section, if the top image becomes a carousel. I'm considering the AIDA approach: this should be at the Desire phase. We need to describe how our product is different from other products out there, to create a desire in the customer.
-
-Take Back Control section: OK.
-
-App elements: Also include an App Store link with Coming Soon. I've included the asset files for both in the /images/ folder.

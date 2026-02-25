@@ -20,7 +20,6 @@
         <ul class="nav-links">
           <li><a href="#how-it-works">How It Works</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#screenshots">Screenshots</a></li>
           <li><a href="#download">Download</a></li>
         </ul>
       </nav>
@@ -37,15 +36,40 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <h1>Know What You're <span>Really</span> Eating</h1>
-      <p class="subtitle">Point your phone at any food. Get instant scores for processing level and overeating risk — powered by AI.</p>
+      <h1>Know What You're <span>Really</span> Eating.</h1>
+      <p class="subtitle">Take a picture of any food — restaurant meals, packaged foods, drinks, raw ingredients, you name it. Get an instant rating of how good it is.</p>
       <div class="hero-ctas">
         <a href="#download" class="btn btn-primary">Get the App</a>
         <a href="#how-it-works" class="btn btn-outline">Learn More</a>
       </div>
-      <div class="phone-mockup">
-        <div class="phone-screen">
-          <span>App screenshot</span>
+      <div class="hero-carousel">
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <div class="phone-mockup"><div class="phone-screen"><span>Scan in action</span></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="phone-mockup"><div class="phone-screen"><span>Score results</span></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="phone-mockup"><div class="phone-screen"><span>Nutrition breakdown</span></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="phone-mockup"><div class="phone-screen"><span>Scan history</span></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="phone-mockup"><div class="phone-screen"><span>Share card</span></div></div>
+            </div>
+          </div>
+          <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+        </div>
+        <div class="carousel-dots">
+          <button class="active" aria-label="Slide 1"></button>
+          <button aria-label="Slide 2"></button>
+          <button aria-label="Slide 3"></button>
+          <button aria-label="Slide 4"></button>
+          <button aria-label="Slide 5"></button>
         </div>
       </div>
     </div>
@@ -54,8 +78,8 @@
   <!-- How It Works -->
   <section id="how-it-works">
     <div class="container">
-      <h2 class="section-title">Two Scores. One Picture.</h2>
-      <p class="section-subtitle">FoodKnower analyses your food on two axes that matter most for healthy eating.</p>
+      <h2 class="section-title">Two important scores.</h2>
+      <p class="section-subtitle">FoodKnower rates your food on the two things that matter for healthy eating.</p>
 
       <div class="scores-grid">
         <!-- Food Integrity -->
@@ -66,7 +90,7 @@
             </div>
             Food Integrity
           </h3>
-          <p>How far your food has been industrially processed, scored 0–100.</p>
+          <p>Is your food industrially processed?</p>
           <ul class="score-labels">
             <li><span class="dot healthy"></span> 75+: Minimally processed</li>
             <li><span class="dot healthy"></span> 50–74: Lightly processed</li>
@@ -96,7 +120,7 @@
             </div>
             Overeating Risk
           </h3>
-          <p>How engineered the food is to override your satiety signals, scored 0–100.</p>
+          <p>Is your food engineered to override your feelings of fullness?</p>
           <ul class="score-labels">
             <li><span class="dot danger"></span> 65+: High risk</li>
             <li><span class="dot warning"></span> 35–64: Moderate risk</li>
@@ -125,94 +149,41 @@
   <section id="features">
     <div class="container">
       <h2 class="section-title">Features</h2>
-      <p class="section-subtitle">Everything you need to make informed food choices, right from your phone.</p>
+      <p class="section-subtitle">Everything you need to make informed food choices.</p>
 
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          </div>
-          <h3>AI Food Identification</h3>
-          <p>Snap a photo of any food — packaged, restaurant, or home-cooked — and get instant identification powered by Claude AI.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 00-2-2H6a2 2 0 00-2 2v9m16 0H4m16 0l1.28 2.55a1 1 0 01-.9 1.45H3.62a1 1 0 01-.9-1.45L4 16"/></svg>
           </div>
-          <h3>Offline Database</h3>
-          <p>Matches packaged foods against the Open Food Facts database (~85 MB bundled). Works without an internet connection.</p>
+          <h3>Database of more than 3 million packaged foods</h3>
+          <p>Packaged foods are matched against the Open Food Facts database and scores calculated with our proprietary formula.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           </div>
-          <h3>Full Nutrition Breakdown</h3>
-          <p>See energy, fat, protein, carbs, sugars, and sodium per 100g for every food you scan.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Scan History</h3>
-          <p>Keep track of up to 100 past scans with thumbnails. Offline queued scans are saved and retried automatically.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-          </div>
-          <h3>Share Score Cards</h3>
-          <p>Generate a shareable score card image for any scan result. Show friends what's really in their food.</p>
+          <h3>Identify any food</h3>
+          <p>Any photo can be identified, whether it's a restaurant meal, a half-eaten snack, or a packaged product, through AI.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
           </div>
-          <h3>Privacy First</h3>
-          <p>Your food photos are never stored on our servers. All scan results and history stay on your device only.</p>
+          <h3>Privacy</h3>
+          <p>We value your privacy and don't store any of your photos on our servers.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Screenshots -->
-  <section id="screenshots" class="carousel-section">
+  <!-- Why It Matters -->
+  <section id="why-it-matters">
     <div class="container">
-      <h2 class="section-title">See It In Action</h2>
-      <p class="section-subtitle">Take a look at FoodKnower in action.</p>
-
-      <div class="carousel-wrapper">
-        <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
-        <div class="carousel-track">
-          <div class="carousel-slide">
-            <div class="phone-mockup"><div class="phone-screen"><span>Scan in action</span></div></div>
-          </div>
-          <div class="carousel-slide">
-            <div class="phone-mockup"><div class="phone-screen"><span>Score results</span></div></div>
-          </div>
-          <div class="carousel-slide">
-            <div class="phone-mockup"><div class="phone-screen"><span>Nutrition breakdown</span></div></div>
-          </div>
-          <div class="carousel-slide">
-            <div class="phone-mockup"><div class="phone-screen"><span>Scan history</span></div></div>
-          </div>
-          <div class="carousel-slide">
-            <div class="phone-mockup"><div class="phone-screen"><span>Share card</span></div></div>
-          </div>
-        </div>
-        <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
-      </div>
-      <div class="carousel-dots">
-        <button class="active" aria-label="Slide 1"></button>
-        <button aria-label="Slide 2"></button>
-        <button aria-label="Slide 3"></button>
-        <button aria-label="Slide 4"></button>
-        <button aria-label="Slide 5"></button>
-      </div>
+      <h2 class="section-title">Why both scores matter.</h2>
+      <p class="section-subtitle">[TBD — Copy about why measuring both processing level and palatability engineering together gives a fuller picture than either alone. How other approaches only look at one side.]</p>
     </div>
   </section>
 
@@ -221,15 +192,19 @@
     <div class="container">
       <h2>Take Back Control</h2>
       <p>Stop guessing. Start knowing what's in your food.</p>
-      <div class="store-badge">
-        <a href="#" class="play-store-btn">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302-2.302 2.302-2.652-2.302 2.652-2.302zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
-          <div>
-            <span class="btn-text-small">GET IT ON</span>
-            <span class="btn-text-large">Google Play</span>
-          </div>
-        </a>
-        <span class="coming-soon-badge">Coming Soon</span>
+      <div class="store-badges">
+        <div class="store-badge">
+          <a href="#" class="store-badge-link">
+            <img src="images/google_badge_en.png" alt="Get it on Google Play" class="store-badge-img">
+          </a>
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+        <div class="store-badge">
+          <a href="#" class="store-badge-link">
+            <img src="images/apple_badge_en.png" alt="Download on the App Store" class="store-badge-img">
+          </a>
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
       </div>
     </div>
   </section>
@@ -247,6 +222,7 @@
           <ul class="footer-links">
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimers.html">Disclaimers</a></li>
             <li><a href="https://community.foodknower.com">Community Forum</a></li>
           </ul>
         </div>
@@ -259,8 +235,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>The scoring system used in FoodKnower is a custom, non-scientific system created by the developer. It is not endorsed by any regulatory body or scientific institution. Scores are illustrative and have not been clinically validated. They are intended to help you think about food choices, not to provide medical or dietary advice.</p>
-        <p>Packaged food data provided by <a href="https://openfoodfacts.org" style="color:#aaa">Open Food Facts</a> (openfoodfacts.org), available under the Open Database License (ODbL). Data has been modified from the original.</p>
+        <p>Scores are illustrative and not medical advice. See our <a href="disclaimers.html" style="color:#aaa">Disclaimers</a> for full details.</p>
         <p>&copy; 2026 FoodKnower. All rights reserved.</p>
       </div>
     </div>
