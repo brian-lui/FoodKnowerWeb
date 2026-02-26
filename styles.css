@@ -576,6 +576,30 @@ section {
 
 .carousel-dots button.active { background: var(--primary); }
 
+/* ===== Founder's Story ===== */
+.founders-story {
+  background: var(--bg-green-light);
+}
+
+.story-content {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.story-content p {
+  margin-bottom: 20px;
+}
+
+.story-content .story-highlight {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
 /* ===== Download CTA ===== */
 .download-cta {
   background: var(--primary);
