@@ -32,6 +32,10 @@
 
 ### Trust and Clarity
 - [ ] Add FAQ section with common questions
+  - [ ] "What if one score is low and the other is high? What does that mean?"
+  - [ ] "Does this mean I shouldn't eat anything that's bad?"
+  - [ ] "Will you provide a journal or calorie counting features?"
+  - [ ] "What if the food identification gets the wrong thing?"
 
 ### SEO and Indexing
 - [ ] Add structured data — MobileApplication schema (requires live Play Store URL)
