@@ -576,6 +576,19 @@ section {
 
 .carousel-dots button.active { background: var(--primary); }
 
+/* ===== Why Both Scores Matter ===== */
+.matters-content {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.matters-content p {
+  margin-bottom: 20px;
+}
+
 /* ===== Founder's Story ===== */
 .founders-story {
   background: var(--bg-green-light);
@@ -598,6 +611,13 @@ section {
   font-weight: 600;
   color: var(--text);
   margin-bottom: 12px;
+}
+
+.story-content .story-signoff {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 32px;
 }
 
 /* ===== Download CTA ===== */

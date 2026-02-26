@@ -21,6 +21,9 @@
 - [ ] Add Founder's Message section to landing page
 - [ ] Add EXIF/metadata stripping confirmation to privacy policy security section
 
+## Text
+- [ ] Change the chevron text
+
 ## Web Elements Roadmap
 
 ### High Impact, Low Effort
@@ -35,3 +38,4 @@
 
 ### Platform and Compliance
 - [ ] Add iOS smart app banner (`apple-itunes-app`) if deep-linking later
+
