@@ -52,7 +52,7 @@
       <h2>Data Sent to Our Server</h2>
       <p>When you perform a food scan, the following data is sent to our server:</p>
       <ul>
-        <li><strong>Food photo</strong> — JPEG-compressed, scaled to max 1024px. Used solely to identify the food via Claude AI. <strong>Not stored on our server</strong> — proxied to the AI and discarded.</li>
+        <li><strong>Food photo</strong> — JPEG-compressed, scaled to max 1024px. Used solely to identify the food via AI analysis.</li>
         <li><strong>Google ID token</strong> — used to authenticate the user and enforce rate limits.</li>
         <li><strong>Analysis mode</strong> — whether Basic or Premium mode was selected.</li>
       </ul>
@@ -63,15 +63,14 @@
         <li><strong>Google account identifier</strong> (subject ID) — a stable account identifier, not your email displayed publicly.</li>
         <li><strong>Email address</strong> — for account identification.</li>
         <li><strong>Account creation timestamp.</strong></li>
-        <li><strong>Per-scan usage log</strong> — user ID + timestamp only, used exclusively for rate limiting (100 scans/day, 500 scans/week).</li>
+        <li><strong>Per-scan usage log</strong> — user ID + timestamp only, used exclusively for rate limiting.</li>
       </ul>
       <p><strong>We do not store your food photos or scan results on our server.</strong></p>
 
       <h2>Data Stored on Your Device Only</h2>
       <p>The following data is stored locally on your device and is <strong>never transmitted</strong> to our servers:</p>
       <ul>
-        <li>Scan history (food name, brand, scores, nutrition data, thumbnail) — up to 100 entries.</li>
-        <li>Food cache (7-day TTL) for faster repeat lookups.</li>
+        <li>Scan history (food name, brand, scores, nutrition data, thumbnail).</li>
         <li>All scan results and nutrition data stay on your phone.</li>
       </ul>
 
@@ -79,14 +78,14 @@
       <p>FoodKnower uses the following third-party services:</p>
       <ul>
         <li><strong>Google Sign-In</strong> — authentication. <a href="https://policies.google.com/privacy">Google's privacy policy</a> applies.</li>
-        <li><strong>Claude AI by Anthropic</strong> — food photo identification. <a href="https://www.anthropic.com/privacy">Anthropic's privacy policy</a> applies.</li>
+        <li><strong>AI language-model providers</strong> — food photo identification. Each provider's respective privacy policy applies. A current list of providers is available at <a href="ai-providers.html">foodknower.com/ai-providers</a>.</li>
         <li><strong>Open Food Facts</strong> — packaged food database, bundled locally within the app. No network calls are made to Open Food Facts.</li>
       </ul>
 
       <h2>Security</h2>
       <ul>
         <li>All network communication uses HTTPS.</li>
-        <li>The Claude API key is stored server-side only — never on your device.</li>
+        <li>All AI API keys are stored server-side only — never on your device.</li>
         <li>Google ID tokens are verified server-side via Google's official libraries.</li>
       </ul>
 
