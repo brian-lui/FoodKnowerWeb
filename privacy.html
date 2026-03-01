@@ -45,16 +45,28 @@
   <main id="main-content" class="policy-page">
     <div class="container">
       <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: February 25, 2026</p>
+      <p class="last-updated">Last updated: March 1, 2026</p>
 
-      <p>This Privacy Policy explains how FoodKnower ("we", "us", or "our") collects, uses, and protects your information when you use our mobile application.</p>
+      <p>This Privacy Policy explains how FoodKnower ("we", "us", or "our") collects, uses, and protects your information when you use our mobile application and website.</p>
+
+      <h2>Data Controller</h2>
+      <p>The data controller responsible for your personal data is:</p>
+      <p>Brian Lui<br>
+      Sydney, Australia<br>
+      Email: <a href="mailto:contact@foodknower.com">contact@foodknower.com</a></p>
 
       <h2>Data Sent to Our Server</h2>
       <p>When you perform a food scan, the following data is sent to our server:</p>
       <ul>
         <li><strong>Food photo</strong> — JPEG-compressed, scaled to max 1024px. Used solely to identify the food via AI analysis.</li>
         <li><strong>Google ID token</strong> — used to authenticate the user and enforce rate limits.</li>
-        <li><strong>Analysis mode</strong> — whether Basic or Premium mode was selected.</li>
+      </ul>
+
+      <h2>Legal Basis for Processing</h2>
+      <p>We process your personal data under the following legal bases:</p>
+      <ul>
+        <li><strong>Contract performance</strong> — processing your food photo and account data is necessary to provide the FoodKnower service you signed up for.</li>
+        <li><strong>Legitimate interest</strong> — we log user ID and timestamp to enforce rate limits, prevent abuse, and maintain service stability.</li>
       </ul>
 
       <h2>Data Stored on Our Server</h2>
@@ -74,6 +86,17 @@
         <li>All scan results and nutrition data stay on your phone.</li>
       </ul>
 
+      <h2>Data Retention</h2>
+      <p>We retain your data for the following periods:</p>
+      <ul>
+        <li><strong>Account data</strong> (Google ID, email, creation timestamp) — retained for as long as your account exists. Deleted upon account deletion request.</li>
+        <li><strong>Usage logs</strong> (user ID + timestamp) — retained for 90 days, then automatically deleted.</li>
+        <li><strong>Food photos</strong> — not retained. Photos are processed in memory for AI analysis and discarded immediately after the scan result is returned.</li>
+      </ul>
+
+      <h2>International Data Transfers</h2>
+      <p>FoodKnower is operated from Australia. Your data may also be transferred to and processed in the United States, because our AI providers operate there. All transfers are protected by HTTPS, and our third-party providers maintain appropriate data protection safeguards. For users in the European Economic Area, these safeguards include the EU–US Data Privacy Framework and Standard Contractual Clauses.</p>
+
       <h2>Third-Party Services</h2>
       <p>FoodKnower uses the following third-party services:</p>
       <ul>
@@ -82,15 +105,41 @@
         <li><strong>Open Food Facts</strong> — packaged food database, bundled locally within the app. No network calls are made to Open Food Facts.</li>
       </ul>
 
+      <h2>Cookies and Tracking</h2>
+      <p>Our website does not use cookies, analytics, or any tracking technologies. No data is collected when you browse foodknower.com.</p>
+
       <h2>Security</h2>
       <ul>
         <li>All network communication uses HTTPS.</li>
         <li>All AI API keys are stored server-side only — never on your device.</li>
         <li>Google ID tokens are verified server-side via Google's official libraries.</li>
+        <li>Photo EXIF metadata (including GPS location) is stripped before transmission to our server.</li>
       </ul>
 
+      <h2>Automated Decision-Making</h2>
+      <p>FoodKnower uses AI to identify food from photos and generate nutrition scores. This processing is automated but is purely informational — no legal or similarly significant decisions are made based on the results. Scores are illustrative and not a substitute for professional dietary advice.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>FoodKnower is not directed at children under 16. We do not knowingly collect personal data from children under 16. If you believe a child under 16 has provided us with personal data, please contact us at <a href="mailto:contact@foodknower.com">contact@foodknower.com</a> and we will delete it promptly.</p>
+
+      <h2>Your Rights</h2>
+      <p>If you are located in the European Economic Area (EEA) or the United Kingdom, you have the following rights under the GDPR:</p>
+      <ul>
+        <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+        <li><strong>Rectification</strong> — request correction of inaccurate or incomplete data.</li>
+        <li><strong>Erasure</strong> — request deletion of your personal data ("right to be forgotten").</li>
+        <li><strong>Restriction</strong> — request that we restrict processing of your data in certain circumstances.</li>
+        <li><strong>Data portability</strong> — request your data in a structured, machine-readable format.</li>
+        <li><strong>Objection</strong> — object to processing based on legitimate interest.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at <a href="mailto:contact@foodknower.com">contact@foodknower.com</a>. We will respond within 30 days.</p>
+      <p>You also have the right to lodge a complaint with your local data protection supervisory authority if you believe your data has been processed unlawfully.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
+
       <h2>Contact</h2>
-      <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:contact@foodknower.com">contact@foodknower.com</a>.</p>
+      <p>If you have questions about this Privacy Policy or wish to exercise your data rights, contact us at <a href="mailto:contact@foodknower.com">contact@foodknower.com</a>.</p>
     </div>
   </main>
 
