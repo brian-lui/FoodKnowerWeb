@@ -330,12 +330,14 @@ section {
 .dot.warning { background: var(--score-warning); }
 .dot.danger { background: var(--score-danger); }
 
-.score-card details {
+.score-card details,
+.score-card-link {
   border-top: 1px solid #eee;
   padding-top: 12px;
 }
 
-.score-card summary {
+.score-card summary,
+.score-card-link {
   cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
@@ -344,6 +346,7 @@ section {
   display: flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
 }
 
 .score-card summary::-webkit-details-marker { display: none; }
