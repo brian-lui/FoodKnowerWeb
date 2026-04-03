@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks - FoodKnower</title>
+  <meta name="description" content="Thanks for joining the FoodKnower beta waitlist. Continue to Google Play to access the Android testing page.">
+  <meta name="theme-color" content="#388E3C">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="canonical" href="https://foodknower.com/thanks.html">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .thanks-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 200px);
+      padding: 24px 0;
+    }
+
+    .thanks-card {
+      width: 100%;
+      max-width: 680px;
+      background: var(--surface);
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      padding: 40px 32px;
+      text-align: center;
+    }
+
+    .thanks-card h1 {
+      margin-bottom: 12px;
+    }
+
+    .thanks-card p {
+      margin-bottom: 16px;
+    }
+
+    .thanks-actions {
+      display: flex;
+      justify-content: center;
+      margin: 28px 0 18px;
+    }
+
+    .thanks-secondary {
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .thanks-card {
+        padding: 32px 24px;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/icon.png" alt="FoodKnower logo">
+        FoodKnower
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#download">Download</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" class="policy-page">
+    <div class="container thanks-wrap">
+      <section class="thanks-card" aria-labelledby="thanks-title">
+        <h1 id="thanks-title">Thanks</h1>
+        <p>Your waitlist request was submitted successfully.</p>
+        <p id="platform-note">Continue to Google Play to access the FoodKnower Android testing page.</p>
+        <div class="thanks-actions">
+          <a id="play-link" class="btn btn-primary" href="https://play.google.com/apps/testing/com.foodknower.app">Continue to Google Play</a>
+        </div>
+        <p class="thanks-secondary">If the button does not open correctly, use <a id="play-link-fallback" href="https://play.google.com/apps/testing/com.foodknower.app">this Google Play link</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links-row">
+        <a href="methodology.html">Methodology</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="legal.html">Legal</a>
+        <a href="about.html">About</a>
+        <a href="press.html">Press</a>
+        <a href="mailto:contact@foodknower.com">contact@foodknower.com</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodKnower. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const webPlayUrl = "https://play.google.com/apps/testing/com.foodknower.app";
+    const androidIntentUrl = "intent://play.google.com/apps/testing/com.foodknower.app#Intent;scheme=https;package=com.android.vending;end";
+    const isAndroid = /Android/i.test(navigator.userAgent || "");
+
+    const playLink = document.getElementById("play-link");
+    const playLinkFallback = document.getElementById("play-link-fallback");
+    const platformNote = document.getElementById("platform-note");
+
+    playLink.href = isAndroid ? androidIntentUrl : webPlayUrl;
+    playLinkFallback.href = webPlayUrl;
+
+    if (isAndroid) {
+      playLink.textContent = "Open in Google Play";
+      platformNote.textContent = "Continue to Google Play. On Android, this should open the Play Store app if it is available.";
+    } else {
+      playLink.textContent = "Open Google Play";
+      platformNote.textContent = "Continue to Google Play in your browser to access the FoodKnower Android testing page.";
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

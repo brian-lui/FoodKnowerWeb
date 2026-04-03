@@ -1,3 +1,9 @@
+// ===== Google Play Link (Android vs Web) =====
+const playLink = document.getElementById('google-play-link');
+if (playLink && /Android/i.test(navigator.userAgent)) {
+  playLink.href = 'https://play.google.com/store/apps/details?id=com.foodknower.app';
+}
+
 // ===== Mobile Nav Toggle =====
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');

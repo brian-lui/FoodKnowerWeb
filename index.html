@@ -285,10 +285,10 @@
       <p>Stop guessing. Start knowing what's in your food.</p>
       <div class="store-badges">
         <div class="store-badge">
-          <a href="#" class="store-badge-link">
+          <a id="google-play-link" href="https://play.google.com/apps/testing/com.foodknower.app" class="store-badge-link">
             <img src="images/google_badge_en.png" alt="Get it on Google Play" class="store-badge-img">
           </a>
-          <span class="coming-soon-badge">Coming Soon</span>
+          <span class="coming-soon-badge">Beta Testing</span>
         </div>
         <div class="store-badge">
           <a href="#" class="store-badge-link">
@@ -297,6 +297,25 @@
           <span class="coming-soon-badge">Coming Soon</span>
         </div>
       </div>
+      <div class="waitlist-divider">
+        <span>or join the Android beta waitlist</span>
+      </div>
+      <form class="waitlist-form" action="https://formspree.io/f/xwvwrvvp" method="POST">
+        <div class="waitlist-input-group">
+          <input
+            id="beta-email"
+            name="email"
+            type="email"
+            required
+            pattern=".+@gmail\.com"
+            title="Only Gmail accounts are allowed"
+            placeholder="Enter your Gmail address"
+            autocomplete="email"
+          >
+          <button type="submit" class="btn btn-primary waitlist-btn">Get Early Access</button>
+        </div>
+        <p class="waitlist-note">Android beta available now. iOS coming soon.</p>
+      </form>
     </div>
   </section>
 
