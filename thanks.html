@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thanks - FoodKnower</title>
-  <meta name="description" content="Thanks for joining the FoodKnower beta waitlist. Continue to Google Play to access the Android testing page.">
+  <meta name="description" content="Continue to Google Play to download FoodKnower for Android.">
   <meta name="theme-color" content="#388E3C">
   <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
@@ -89,12 +89,12 @@
     <div class="container thanks-wrap">
       <section class="thanks-card" aria-labelledby="thanks-title">
         <h1 id="thanks-title">Thanks</h1>
-        <p>Your waitlist request was submitted successfully.</p>
-        <p id="platform-note">Continue to Google Play to access the FoodKnower Android testing page.</p>
+        <p>Continue to Google Play to download FoodKnower for Android.</p>
+        <p id="platform-note">Continue to Google Play to open the FoodKnower download page.</p>
         <div class="thanks-actions">
-          <a id="play-link" class="btn btn-primary" href="https://play.google.com/apps/testing/com.foodknower.app">Continue to Google Play</a>
+          <a id="play-link" class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.foodknower.app">Continue to Google Play</a>
         </div>
-        <p class="thanks-secondary">If the button does not open correctly, use <a id="play-link-fallback" href="https://play.google.com/apps/testing/com.foodknower.app">this Google Play link</a>.</p>
+        <p class="thanks-secondary">If the button does not open correctly, use <a id="play-link-fallback" href="https://play.google.com/store/apps/details?id=com.foodknower.app">this Google Play link</a>.</p>
       </section>
     </div>
   </main>
@@ -117,8 +117,8 @@
   </footer>
 
   <script>
-    const webPlayUrl = "https://play.google.com/apps/testing/com.foodknower.app";
-    const androidIntentUrl = "intent://play.google.com/apps/testing/com.foodknower.app#Intent;scheme=https;package=com.android.vending;end";
+    const webPlayUrl = "https://play.google.com/store/apps/details?id=com.foodknower.app";
+    const androidIntentUrl = "intent://details?id=com.foodknower.app#Intent;scheme=market;package=com.android.vending;end";
     const isAndroid = /Android/i.test(navigator.userAgent || "");
 
     const playLink = document.getElementById("play-link");
@@ -133,7 +133,7 @@
       platformNote.textContent = "Continue to Google Play. On Android, this should open the Play Store app if it is available.";
     } else {
       playLink.textContent = "Open Google Play";
-      platformNote.textContent = "Continue to Google Play in your browser to access the FoodKnower Android testing page.";
+      platformNote.textContent = "Continue to Google Play in your browser to open the FoodKnower download page.";
     }
   </script>
   <script src="script.js"></script>
